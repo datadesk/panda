@@ -103,6 +103,19 @@ PANDA.views.Root = Backbone.View.extend({
             this.refresh_notifications(); 
 
             return true;
+        } else {
+            // Hack the system to log in you as the generic user
+            // if you don't have an account
+            this.set_current_user(new PANDA.models.User({
+                email: "user@pandaproject.net",
+                id: 2,
+                is_staff: false
+            }));
+
+            // Fetch latest notifications (doubles as a verification of the user's credentials)
+            this.refresh_notifications(); 
+
+            return true;
         }
 
         this.goto_login(window.location.hash);
