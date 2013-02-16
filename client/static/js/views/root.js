@@ -107,8 +107,8 @@ PANDA.views.Root = Backbone.View.extend({
             // Hack the system to log in you as the generic user
             // if you don't have an account
             this.set_current_user(new PANDA.models.User({
-                email: "user@pandaproject.net",
-                id: 2,
+                email: "ben.welsh@latimes.com",
+                id: 1,
                 is_staff: false
             }));
 
