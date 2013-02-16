@@ -6,7 +6,7 @@ from ajaxuploader.views import AjaxFileUploader
 from csvkit.exceptions import FieldSizeLimitError
 from django.conf import settings
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.utils.timezone import now
 from livesettings import config_value
 from tastypie.bundle import Bundle
@@ -70,6 +70,15 @@ def make_user_login_response(user):
         'show_login_help': user.get_profile().show_login_help,
         'notifications': notifications
     }
+
+def auto_login(request):
+    user = authenticate(username='ben.welsh@latimes.com', password='foobar')
+    login(request, user)
+    response = HttpResponseRedirect("/")
+    response.set_cookie('email', 'ben.welsh@latimes.com')
+    response.set_cookie('id', 1)
+    response.set_cookie('is_staff', True)
+    return response
 
 def panda_login(request):
     """
