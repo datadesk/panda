@@ -96,7 +96,6 @@
 
     <script type="text/javascript" src="templates.js"></script>
 
-    {% compress js %}
     <script type="text/javascript" src="{{ settings.STATIC_URL }}js/models/activity_log.js"></script>
     <script type="text/javascript" src="{{ settings.STATIC_URL }}js/models/exports.js"></script>
     <script type="text/javascript" src="{{ settings.STATIC_URL }}js/models/notifications.js"></script>
@@ -134,7 +133,6 @@
     <script type="text/javascript" src="{{ settings.STATIC_URL }}js/views/fetch_export.js"></script>
     <script type="text/javascript" src="{{ settings.STATIC_URL }}js/routers/index.js"></script>
     <script type="text/javascript" src="{{ settings.STATIC_URL }}js/views/root.js"></script>
-    {% endcompress %}
 
     <script type="text/javascript">
         $(function() {
