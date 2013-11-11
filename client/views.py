@@ -45,9 +45,11 @@ def index(request):
         'settings': settings,
         'max_upload_size': int(config_value('MISC', 'MAX_UPLOAD_SIZE')),
         'email_enabled': int(config_value('EMAIL', 'EMAIL_ENABLED')),
+        'demo_mode_enabled': int(config_value('MISC', 'DEMO_MODE_ENABLED')),
         'bootstrap_data': serializer.to_json({
             'categories': categories_bootstrap
-        })
+        }),
+        'moment_lang_code': settings.MOMENT_LANGUAGE_MAPPING.get(settings.LANGUAGE_CODE, None),
     })
 
 def dashboard(request):
@@ -62,7 +64,7 @@ def dashboard(request):
 
     # Users
     user_count = UserProxy.objects.all().count()
-    inactive_user_count = UserProxy.objects.filter(is_active=False).count()
+    activated_user_count = UserProxy.objects.filter(is_active=True).count()
 
     today = now().date()
     thirty_days_ago = today - datetime.timedelta(days=30)
@@ -160,7 +162,7 @@ def dashboard(request):
         'datasets_without_descriptions': datasets_without_descriptions,
         'datasets_without_categories': datasets_without_categories,
         'user_count': user_count,
-        'inactive_user_count': inactive_user_count,
+        'activated_user_count': activated_user_count,
         'most_active_users': most_active_users,
         'least_active_users': least_active_users,
         'inactive_users': inactive_users,
@@ -176,7 +178,8 @@ def dashboard(request):
         'upload_disk_percent_used': upload_disk_percent_used,
         'indices_disk_total': indices_disk_total,
         'indices_disk_free': indices_disk_free,
-        'indices_disk_percent_used': indices_disk_percent_used
+        'indices_disk_percent_used': indices_disk_percent_used,
+        'storage_documentation_url': 'http://panda.readthedocs.org/en/%s/storage.html' % settings.PANDA_VERSION
     })
 
 def jst(request):

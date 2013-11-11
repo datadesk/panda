@@ -4,6 +4,7 @@ import datetime
 import os
 
 import django
+from django.utils.translation import ugettext_lazy as _
 
 # Which settings are we using?
 # Useful for debugging.
@@ -46,7 +47,9 @@ USE_TZ = True
 
 LANGUAGE_CODE = 'en-us'
 USE_I18N = True
-USE_L10N = True
+USE_L10N = False 
+
+LOCALE_PATHS = (os.path.join(SITE_ROOT, 'locale'),)
 
 # Media
 STATIC_ROOT = os.path.join(SITE_ROOT, 'media')
@@ -77,13 +80,14 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.media',
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
-    'django.core.context_processors.csrf'
+    'django.core.context_processors.csrf',
+    'django.core.context_processors.i18n'
 )
 
 MIDDLEWARE_CLASSES = (
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'panda.middleware.CsrfCookieUsedMiddleware'
@@ -238,7 +242,7 @@ SOLR_DATASETS_CORE = 'datasets'
 SOLR_DIRECTORY = '/var/solr'
 
 # Miscellaneous configuration
-PANDA_VERSION = '1.0.3'
+PANDA_VERSION = '1.1.1'
 PANDA_DEFAULT_SEARCH_GROUPS = 10
 PANDA_DEFAULT_SEARCH_ROWS_PER_GROUP = 5
 PANDA_DEFAULT_SEARCH_ROWS = 50
@@ -252,7 +256,14 @@ PANDA_NOTIFICATIONS_TO_SHOW = 50
 
 PANDA_UNCATEGORIZED_ID = 0
 PANDA_UNCATEGORIZED_SLUG = 'uncategorized'
-PANDA_UNCATEGORIZED_NAME = 'Uncategorized'
+# running this through gettext causes file uploads not to work, so disabled until solved!
+PANDA_UNCATEGORIZED_NAME = _('Uncategorized')
+
+MOMENT_LANGUAGE_MAPPING = {
+    'en': None,
+    'es': 'es',
+    'de': 'de'
+}
 
 # Allow for local (per-user) override
 try:

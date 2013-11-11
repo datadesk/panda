@@ -1,0 +1,1855 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-05 22:56+0000\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#: client/templates/dashboard.html:5
+msgid "PANDA Dashboard"
+msgstr "Panel de control"
+
+#: client/templates/dashboard.html:5
+#, python-format
+msgid "Version %(version)s"
+msgstr "Versión %(version)s"
+
+#: client/templates/dashboard.html:6
+#, python-format
+msgid "Datasets <small>%(dataset_count)s total</small>"
+msgstr "Gurpos de datos <small>%(dataset_count)s total</small>"
+
+#: client/templates/dashboard.html:9
+msgid "Missing descriptions"
+msgstr "Descripciones que faltan"
+
+#: client/templates/dashboard.html:17
+msgid "Missing categories"
+msgstr "Categorías que faltan"
+
+#: client/templates/dashboard.html:26
+#, python-format
+msgid ""
+"Users <small>%(user_count)s total, %(activated_user_count)s activated</small>"
+msgstr ""
+"Usuarios <small>%(user_count)s totales, %(activated_user_count)s activados</"
+"small>"
+
+#: client/templates/dashboard.html:29
+msgid "Users active over last 30 days"
+msgstr "Usuarios activos en los últimos 30 días"
+
+#: client/templates/dashboard.html:36
+msgid "Most active users in the last 30 days"
+msgstr "Usuarios más activos en los últimos 30 días"
+
+#: client/templates/dashboard.html:39 client/templates/dashboard.html.py:47
+#, fuzzy, python-format
+msgid "(active on %(days_active)s day)"
+msgid_plural "(active on %(days_active)s days)"
+msgstr[0] "(activo en %(days_active)s días)"
+msgstr[1] "(activo en %(days_active)s días)"
+
+#: client/templates/dashboard.html:44
+msgid "Least active users in the last 30 days"
+msgstr "Usuarios menos activos en los últimos 30 días"
+
+#: client/templates/dashboard.html:52
+msgid "Inactive users in the last 30 days"
+msgstr "Usuarios inactivos en los últimos 30 días"
+
+#: client/templates/dashboard.html:61
+#, python-format
+msgid "Searches <small>%(total_searches)s total</small>"
+msgstr "Búsquedas <small>%(total_searches)s total</small>"
+
+#: client/templates/dashboard.html:64
+msgid "Most searched datasets in the last 30 days"
+msgstr "Grupos de datos más buscados en los últimos 30 días"
+
+#: client/templates/dashboard.html:67
+#, fuzzy, python-format
+msgid "(%(count)s search)"
+msgid_plural "(%(count)s searches)"
+msgstr[0] "(%(count)s Búsquedas)"
+msgstr[1] "(%(count)s Búsquedas)"
+
+#: client/templates/dashboard.html:72
+msgid "Search count by day"
+msgstr "Número de búsquedas por día"
+
+#: client/templates/dashboard.html:77
+msgid "Disk usage"
+msgstr "Uso de disco"
+
+#: client/templates/dashboard.html:83
+msgid "Disk"
+msgstr "Disco"
+
+#: client/templates/dashboard.html:84
+msgid "Capacity"
+msgstr "Capacidad"
+
+#: client/templates/dashboard.html:85
+msgid "Remaining"
+msgstr "Disponible"
+
+#: client/templates/dashboard.html:96
+msgid "Uploaded files (and exports)"
+msgstr "Subir ficheros (y exportaciones)"
+
+#: client/templates/dashboard.html:103
+msgid "Search data"
+msgstr "Datos de la búsqueda"
+
+#: client/templates/dashboard.html:111
+msgid "Low disk?"
+msgstr "¿Poco espacio en disco?"
+
+#: client/templates/dashboard.html:111
+#, python-format
+msgid "Read about <a href=\"%(url)s\">upgrading your storage space</a>."
+msgstr "Lee sobre como <a href=\"%(url)s\">incrementar tu espacio en disco</a>"
+
+#: client/templates/index.html:26
+msgid "Search"
+msgstr "Buscar"
+
+#: client/templates/index.html:27
+msgid "Upload"
+msgstr "Subir"
+
+#: client/templates/index.html:29
+msgid "Find a dataset"
+msgstr "Encontrar un dataset"
+
+#: client/templates/index.html:34
+msgid "Help"
+msgstr "Ayuda"
+
+#: client/templates/index.html:36
+msgid "Read the documentation"
+msgstr "Lea la documentación"
+
+#: client/templates/index.html:37
+msgid "Ask a question on the user group"
+msgstr "Haz una pregunta en el grupo de usuarios"
+
+#: client/templates/index.html:44 panda/models/notification.py:36
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#: client/templates/index.html:49
+msgid "View all notifications"
+msgstr "Ver todas las notificaciones"
+
+#: client/templates/index.html:52
+#, fuzzy
+msgid "Dashboard"
+msgstr "Panel de control"
+
+#: client/templates/index.html:53
+msgid "Admin"
+msgstr "Administración"
+
+#: client/templates/index.html:54
+msgid "Logout"
+msgstr "Salir"
+
+#: config/settings.py:260
+#, fuzzy
+msgid "Uncategorized"
+msgstr "Categorías que faltan"
+
+#: jumpstart/views.py:38
+msgid "English"
+msgstr "Inglés"
+
+#: jumpstart/views.py:39
+msgid "German"
+msgstr ""
+
+#: panda/admin.py:48
+msgid "E-mail"
+msgstr "Correo electrónico"
+
+#: panda/admin.py:58
+msgid "A user with that email address already exists."
+msgstr "Ya existe un usuario con ese correo electrónico"
+
+#: panda/admin.py:133
+msgid "Personal info"
+msgstr "Información personal"
+
+#: panda/admin.py:134
+msgid "Permissions"
+msgstr "Permisos"
+
+#: panda/admin.py:135
+msgid "Important dates"
+msgstr "Fechas importantes"
+
+#: panda/admin.py:163 panda/admin.py:184
+msgid "Email is not configured for your PANDA."
+msgstr ""
+
+#: panda/admin.py:176
+#, fuzzy
+msgid "Activation email sent."
+msgstr "Reenviar correo de activación"
+
+#: panda/admin.py:199
+#, fuzzy, python-format
+msgid "Sent %i activation emails."
+msgstr "Reenviar correo de activación"
+
+#: panda/admin.py:201
+#, fuzzy
+msgid "Resend activation email(s)"
+msgstr "Reenviar correo de activación"
+
+#: panda/admin.py:210 panda/admin.py:352
+#, python-format
+msgid "Add %s"
+msgstr "Añadir %s"
+
+#: panda/admin.py:224
+msgid "No user data provided."
+msgstr ""
+
+#: panda/admin.py:231
+msgid "Only UTF-8 data is supported."
+msgstr ""
+
+#: panda/admin.py:234
+msgid ""
+"Unable to determine the format of the data you entered. Please ensure it is "
+"valid CSV data."
+msgstr ""
+
+#: panda/admin.py:242
+#, python-format
+msgid "Row %i has less than 4 columns."
+msgstr ""
+
+#: panda/admin.py:244
+#, python-format
+msgid "Row %i has more than 4 columns."
+msgstr ""
+
+#: panda/admin.py:247
+#, python-format
+msgid "User \"%s\" already exists"
+msgstr ""
+
+#: panda/admin.py:260
+#, python-format
+msgid "Successfully created %i user(s)"
+msgstr ""
+
+#: panda/admin.py:263
+#, fuzzy, python-format
+msgid "Sent %i activation email(s)"
+msgstr "Reenviar correo de activación"
+
+#: panda/admin.py:430
+msgid "You can not abort a task that has already ended."
+msgstr ""
+
+#: panda/admin.py:433
+msgid "Attempting to abort task."
+msgstr ""
+
+#: panda/admin.py:444
+msgid "You can not abort tasks that have already ended."
+msgstr ""
+
+#: panda/admin.py:450
+#, python-format
+msgid "Attempting to abort %i task(s)."
+msgstr ""
+
+#: panda/admin.py:452
+msgid "Abort task(s)"
+msgstr ""
+
+#: panda/config.py:9
+msgid "Site domain"
+msgstr ""
+
+#: panda/config.py:16
+msgid "Site domain to be referenced in outgoing email."
+msgstr ""
+
+#: panda/config.py:23
+#, fuzzy
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: panda/config.py:30
+msgid "Enable email?"
+msgstr ""
+
+#: panda/config.py:31
+msgid ""
+"If enabled, notifications and activation messages will be sent via email."
+msgstr ""
+
+#: panda/config.py:39
+msgid "Hostname or IP of the SMTP server."
+msgstr ""
+
+#: panda/config.py:47
+msgid "Port number of the SMTP server."
+msgstr ""
+
+#: panda/config.py:55
+msgid "Username for the SMTP server."
+msgstr ""
+
+#: panda/config.py:63
+msgid "Password for the SMTP server."
+msgstr ""
+
+#: panda/config.py:71
+msgid "Use TLS encryption when connecting to the SMTP server?"
+msgstr ""
+
+#: panda/config.py:79
+msgid "Email address that PANDA messages should appear to come from."
+msgstr ""
+
+#: panda/config.py:87
+msgid "Miscellaneous"
+msgstr ""
+
+#: panda/config.py:94
+msgid "Enable demo mode?"
+msgstr ""
+
+#: panda/config.py:95
+msgid ""
+"In demo mode the login fields will automatically be prepopulated with the "
+"default username and password."
+msgstr ""
+
+#: panda/config.py:103
+msgid "Maximum size allowed for user-uploaded files, in bytes."
+msgstr ""
+
+#: panda/config.py:104
+msgid "The default value is equivalent to 1GB."
+msgstr ""
+
+#: panda/config.py:112
+msgid "Performance"
+msgstr ""
+
+#: panda/config.py:119
+msgid "Number of seconds to wait between processing batches of data."
+msgstr ""
+
+#: panda/config.py:120
+msgid ""
+"A larger number will result in slower imports and exports, but better "
+"responsiveness from the PANDA user interface."
+msgstr ""
+
+#: panda/exceptions.py:50
+#, python-format
+msgid "Unable to convert \"%(value)s\" to type %(normal_type)s"
+msgstr ""
+
+#: panda/views.py:49
+msgid "CSV contains fields longer than maximum length of 131072 characters."
+msgstr ""
+
+#: panda/views.py:99
+msgid "This account is disabled"
+msgstr ""
+
+#: panda/views.py:102
+msgid "Email or password is incorrect"
+msgstr ""
+
+#: panda/views.py:113
+msgid "Successfully logged out"
+msgstr ""
+
+#: panda/views.py:123
+#, fuzzy
+msgid "Invalid activation key"
+msgstr "Reenviar correo de activación"
+
+#: panda/views.py:128
+msgid "Expired activation key. Contact your administrator"
+msgstr ""
+
+#: panda/views.py:149
+#, fuzzy
+msgid "Invalid activation key!"
+msgstr "Reenviar correo de activación"
+
+#: panda/views.py:154
+msgid "Expired activation key. Contact your administrator."
+msgstr ""
+
+#: panda/views.py:157 panda/api/datasets.py:24 panda/api/users.py:24
+msgid "This field is required."
+msgstr ""
+
+#: panda/views.py:195 panda/views.py:198
+msgid "Unknown or inactive email address."
+msgstr ""
+
+#: panda/views.py:204
+#, fuzzy
+msgid "Forgotten password"
+msgstr "Cambiar contraseña"
+
+#: panda/views.py:205
+#, python-format
+msgid ""
+"PANDA received a request to change your password.\n"
+"\n"
+"To set your new password follow this link:\n"
+"\n"
+"http://%(site_domain)s/#reset-password/%(activation_key)s\n"
+"\n"
+"If you did not request this email you should notify your administrator."
+msgstr ""
+
+#: panda/api/activity_log.py:41
+msgid "Activity has already been recorded."
+msgstr ""
+
+#: panda/api/data.py:60
+msgid "The data field is required."
+msgstr ""
+
+#: panda/api/data.py:64
+msgid "external_id must be a string."
+msgstr ""
+
+#: panda/api/data.py:66
+msgid "external_id can only contain letters, numbers, underscores and dashes."
+msgstr ""
+
+#: panda/api/data.py:75
+msgid "Slug of the dataset this row of data belongs to."
+msgstr ""
+
+#: panda/api/data.py:77
+msgid "Per-dataset unique identifier for this row of data."
+msgstr ""
+
+#: panda/api/data.py:79
+msgid ""
+"An ordered list of values corresponding to the columns in the parent dataset."
+msgstr ""
+
+#: panda/api/data.py:160
+msgid ""
+"Dataset specified in request body does not agree with dataset API endpoint "
+"used."
+msgstr ""
+
+#: panda/api/data.py:173
+msgid ""
+"Can not create or modify data for a dataset which has initial_upload, but "
+"has not completed the import process."
+msgstr ""
+
+#: panda/api/data.py:176
+msgid "Can not create or modify data for a dataset without columns."
+msgstr ""
+
+#: panda/api/data.py:181
+#, python-format
+msgid "Got %(field_count)i data fields. Expected %(expected_field_count)i."
+msgstr ""
+
+#: panda/api/data.py:249 panda/api/data.py:280 panda/api/data.py:350
+#: panda/api/data.py:402 panda/api/datasets.py:245 panda/api/datasets.py:299
+#: panda/api/datasets.py:342
+msgid "Dataset is currently locked by another process."
+msgstr ""
+
+#: panda/api/data.py:320 panda/api/users.py:264
+#, fuzzy
+msgid "Invalid data sent."
+msgstr "Encontrar un dataset"
+
+#: panda/api/data.py:451
+#, python-format
+msgid "Export search results for \"%s\"."
+msgstr ""
+
+#: panda/api/data.py:532
+#, fuzzy
+msgid "Export queued."
+msgstr "Exportación fallida"
+
+#: panda/api/data_uploads.py:69 panda/api/related_uploads.py:59
+#: panda/api/users.py:212
+msgid "A model instance matching the provided arguments could not be found."
+msgstr ""
+
+#: panda/api/datasets.py:182
+msgid ""
+"The \"columns\" argument must also be specified when specifying "
+"\"typed_columns\"."
+msgstr ""
+
+#: panda/api/datasets.py:187
+msgid ""
+"The \"typed_columns\" argument must be a comma-separated list of True/False "
+"values with the same number of values as the \"columns\" argument."
+msgstr ""
+
+#: panda/api/datasets.py:193
+msgid ""
+"The \"columns\" argument must also be specified when specifying "
+"\"column_types\"."
+msgstr ""
+
+#: panda/api/datasets.py:198
+msgid ""
+"The \"column_types\" argument must be a comma-separated list of types with "
+"the same number of values as the \"columns\" argument."
+msgstr ""
+
+#: panda/api/datasets.py:274
+msgid "This dataset has no data to reindex."
+msgstr ""
+
+#: panda/api/datasets.py:280
+msgid ""
+"typed_columns must be a comma-separated list of True/False values with the "
+"same number of values as the dataset has columns."
+msgstr ""
+
+#: panda/api/datasets.py:288
+msgid ""
+"column_types must be a comma-separated list of types with the same number of "
+"values as the dataset has columns."
+msgstr ""
+
+#: panda/api/users.py:26
+msgid "Email address is not valid."
+msgstr ""
+
+#: panda/management/commands/purge_orphaned_uploads.py:14
+msgid ""
+"Audit uploads and local files, deleting any not associated with a dataset."
+msgstr ""
+
+#: panda/management/commands/purge_orphaned_uploads.py:20
+msgid "Only describe what files would be deleted, don't actually delete them."
+msgstr ""
+
+#: panda/management/commands/purge_orphaned_uploads.py:25
+msgid "Running in fake mode! No files will actually be deleted!"
+msgstr ""
+
+#: panda/management/commands/purge_orphaned_uploads.py:40
+#, python-format
+msgid "Would delete upload: %s\n"
+msgstr ""
+
+#: panda/management/commands/purge_orphaned_uploads.py:42
+#, python-format
+msgid "Deleted upload: %s\n"
+msgstr ""
+
+#: panda/management/commands/purge_orphaned_uploads.py:49
+#, python-format
+msgid "Would delete file: %s\n"
+msgstr ""
+
+#: panda/management/commands/purge_orphaned_uploads.py:51
+#, python-format
+msgid "Deleted file: %s\n"
+msgstr ""
+
+#: panda/management/commands/reindex_datasets.py:9
+#, fuzzy
+msgid "Reindex all datasets"
+msgstr "Encontrar un dataset"
+
+#: panda/management/commands/reindex_datasets.py:14
+#, python-format
+msgid "Updated: %s\n"
+msgstr ""
+
+#: panda/management/commands/reindex_datasets.py:16
+msgid "Done!\n"
+msgstr ""
+
+#: panda/models/activity_log.py:13
+msgid "The user who was active."
+msgstr ""
+
+#: panda/models/activity_log.py:14 panda/models/search_log.py:15
+#: panda/models/search_subscription.py:16 panda/models/user_profile.py:20
+msgid "user"
+msgstr ""
+
+#: panda/models/activity_log.py:15 panda/models/search_log.py:21
+msgid "when"
+msgstr ""
+
+#: panda/models/activity_log.py:16
+msgid "The date this activity was recorded."
+msgstr ""
+
+#: panda/models/activity_log.py:20
+msgid "ActivityLog"
+msgstr ""
+
+#: panda/models/activity_log.py:21
+msgid "ActivityLogs"
+msgstr ""
+
+#: panda/models/activity_log.py:25
+#, python-format
+msgid "%(user)s at %(when)s"
+msgstr ""
+
+#: panda/models/base_upload.py:15
+msgid "filename"
+msgstr ""
+
+#: panda/models/base_upload.py:17
+msgid "Filename as stored in PANDA."
+msgstr ""
+
+#: panda/models/base_upload.py:18
+msgid "original_filename"
+msgstr ""
+
+#: panda/models/base_upload.py:20
+msgid "Filename as originally uploaded."
+msgstr ""
+
+#: panda/models/base_upload.py:21
+msgid "size"
+msgstr ""
+
+#: panda/models/base_upload.py:22
+msgid "Size of the file in bytes."
+msgstr ""
+
+#: panda/models/base_upload.py:24
+msgid "The user who uploaded this file."
+msgstr ""
+
+#: panda/models/base_upload.py:25 panda/models/dataset.py:47
+#: panda/models/task_status.py:39
+msgid "creator"
+msgstr ""
+
+#: panda/models/base_upload.py:26 panda/models/dataset.py:43
+msgid "creation_date"
+msgstr ""
+
+#: panda/models/base_upload.py:27
+msgid "The date this file was uploaded."
+msgstr ""
+
+#: panda/models/base_upload.py:28
+msgid "title"
+msgstr ""
+
+#: panda/models/base_upload.py:30
+msgid "A user-friendly name for this file."
+msgstr ""
+
+#: panda/models/category.py:12 panda/models/dataset.py:25
+#, fuzzy
+msgid "name"
+msgstr "%(name)s"
+
+#: panda/models/category.py:14
+msgid "Category name."
+msgstr ""
+
+#: panda/models/category.py:18
+msgid "Category"
+msgstr ""
+
+#: panda/models/category.py:19
+#, fuzzy
+msgid "Categories"
+msgstr "Categorías que faltan"
+
+#: panda/models/data_upload.py:22 panda/models/related_upload.py:16
+msgid "The dataset this upload is associated with."
+msgstr ""
+
+#: panda/models/data_upload.py:23 panda/models/export.py:17
+#: panda/models/related_upload.py:17 panda/models/search_log.py:18
+#: panda/models/search_subscription.py:19
+#, fuzzy
+msgid "dataset"
+msgstr "Encontrar un dataset"
+
+#: panda/models/data_upload.py:25
+msgid "data_type"
+msgstr ""
+
+#: panda/models/data_upload.py:26
+msgid "The type of this file, if known."
+msgstr ""
+
+#: panda/models/data_upload.py:27
+msgid "encoding"
+msgstr ""
+
+#: panda/models/data_upload.py:28
+msgid "The character encoding of this file. Defaults to utf-8"
+msgstr ""
+
+#: panda/models/data_upload.py:29
+msgid "dialect"
+msgstr ""
+
+#: panda/models/data_upload.py:30
+msgid "Description of the formatting of this file."
+msgstr ""
+
+#: panda/models/data_upload.py:31
+msgid "columns"
+msgstr ""
+
+#: panda/models/data_upload.py:32
+msgid "A list of names for the columns in this upload."
+msgstr ""
+
+#: panda/models/data_upload.py:33 panda/models/dataset.py:36
+msgid "sample_data"
+msgstr ""
+
+#: panda/models/data_upload.py:34
+msgid "Example data from this file."
+msgstr ""
+
+#: panda/models/data_upload.py:35
+msgid "guessed_types"
+msgstr ""
+
+#: panda/models/data_upload.py:36
+msgid "Column types guessed based on a sample of data."
+msgstr ""
+
+#: panda/models/data_upload.py:37
+#, fuzzy
+msgid "imported"
+msgstr "Importación fallida"
+
+#: panda/models/data_upload.py:38
+msgid "Has this upload ever been imported into its parent dataset."
+msgstr ""
+
+#: panda/models/data_upload.py:39
+msgid "deletable"
+msgstr ""
+
+#: panda/models/data_upload.py:40
+msgid "Can this data upload be deleted? False for uploads prior to 1.0."
+msgstr ""
+
+#: panda/models/data_upload.py:47
+#, fuzzy
+msgid "DataUpload"
+msgstr "Subir"
+
+#: panda/models/data_upload.py:48
+#, fuzzy
+msgid "DataUploads"
+msgstr "Subir"
+
+#: panda/models/data_upload.py:117
+msgid ""
+"This data upload was created before deleting individual data uploads was "
+"supported. In order to delete it you must delete the entire dataset."
+msgstr ""
+
+#: panda/models/dataset.py:26
+msgid "User-supplied dataset name."
+msgstr ""
+
+#: panda/models/dataset.py:27
+#, fuzzy
+msgid "description"
+msgstr "Descripciones que faltan"
+
+#: panda/models/dataset.py:28
+msgid "User-supplied dataset description."
+msgstr ""
+
+#: panda/models/dataset.py:32
+msgid "The data upload used to create this dataset, if any was used."
+msgstr ""
+
+#: panda/models/dataset.py:33
+msgid "initial_upload"
+msgstr ""
+
+#: panda/models/dataset.py:34
+msgid "column_schema"
+msgstr ""
+
+#: panda/models/dataset.py:35
+msgid "Metadata about columns."
+msgstr ""
+
+#: panda/models/dataset.py:37
+msgid "Example data rows from the dataset."
+msgstr ""
+
+#: panda/models/dataset.py:38
+msgid "row_count"
+msgstr ""
+
+#: panda/models/dataset.py:39
+msgid ""
+"The number of rows in this dataset. Null if no data has been added/imported."
+msgstr ""
+
+#: panda/models/dataset.py:41
+msgid "The currently executed or last finished task related to this dataset."
+msgstr ""
+
+#: panda/models/dataset.py:42
+msgid "current_task"
+msgstr ""
+
+#: panda/models/dataset.py:44
+msgid "The date this dataset was initially created."
+msgstr ""
+
+#: panda/models/dataset.py:46
+msgid "The user who created this dataset."
+msgstr ""
+
+#: panda/models/dataset.py:49
+msgid "Categories containing this Dataset."
+msgstr ""
+
+#: panda/models/dataset.py:50
+#, fuzzy
+msgid "categories"
+msgstr "Categorías que faltan"
+
+#: panda/models/dataset.py:51
+msgid "last_modified"
+msgstr ""
+
+#: panda/models/dataset.py:52
+msgid "When, if ever, was this dataset last modified via the API?"
+msgstr ""
+
+#: panda/models/dataset.py:53
+#, fuzzy
+msgid "last_modification"
+msgstr "Notificaciones"
+
+#: panda/models/dataset.py:54
+msgid "Description of the last modification made to this Dataset."
+msgstr ""
+
+#: panda/models/dataset.py:56
+msgid "The user, if any, who last modified this dataset."
+msgstr ""
+
+#: panda/models/dataset.py:57
+msgid "last_modified_by"
+msgstr ""
+
+#: panda/models/dataset.py:58
+msgid "locked"
+msgstr ""
+
+#: panda/models/dataset.py:59
+msgid "Is this table locked for writing?"
+msgstr ""
+
+#: panda/models/dataset.py:60
+msgid "locked_at"
+msgstr ""
+
+#: panda/models/dataset.py:61
+msgid "Time this dataset was last locked."
+msgstr ""
+
+#: panda/models/dataset.py:67
+msgid "Dataset"
+msgstr ""
+
+#: panda/models/dataset.py:68
+msgid "Datasets"
+msgstr ""
+
+#: panda/models/dataset.py:93 panda/models/dataset.py:109
+msgid "This dataset is currently locked by another process."
+msgstr ""
+
+#: panda/models/dataset.py:188
+msgid "This file has already been imported."
+msgstr ""
+
+#: panda/models/dataset.py:194
+msgid "This file type is not supported for data import."
+msgstr ""
+
+#: panda/models/dataset.py:199
+msgid "The columns in this file do not match those in the dataset."
+msgstr ""
+
+#: panda/models/dataset.py:212
+#, python-format
+msgid "Import data from %(filename)s into %(slug)s."
+msgstr ""
+
+#: panda/models/dataset.py:253
+#, python-format
+msgid "Reindex %(slug)s with %(typed_column_count)i column filters."
+msgstr ""
+
+#: panda/models/dataset.py:276
+#, fuzzy, python-format
+msgid "Export search results for \"%(query)s\" in %(slug)s."
+msgstr "Nuevos resultados para la búsqueda \"%(query)s\" en %(dataset_name)s"
+
+#: panda/models/dataset.py:279
+#, python-format
+msgid "Exporting data in %s."
+msgstr ""
+
+#: panda/models/dataset.py:333
+#, python-format
+msgid "1 row %s"
+msgstr ""
+
+#: panda/models/dataset.py:373
+#, python-format
+msgid "%(added)i rows added and %(updated)i updated"
+msgstr ""
+
+#: panda/models/dataset.py:376
+#, python-format
+msgid "%i rows added"
+msgstr ""
+
+#: panda/models/dataset.py:378
+#, python-format
+msgid "%i rows updated"
+msgstr ""
+
+#: panda/models/dataset.py:398
+msgid "1 row deleted"
+msgstr ""
+
+#: panda/models/dataset.py:415
+#, python-format
+msgid "All %i rows deleted"
+msgstr ""
+
+#: panda/models/export.py:16
+msgid "The dataset this export is from."
+msgstr ""
+
+#: panda/models/export.py:24
+#, fuzzy
+msgid "Export"
+msgstr "Exportación fallida"
+
+#: panda/models/export.py:25
+#, fuzzy
+msgid "Exports"
+msgstr "Exportación fallida"
+
+#: panda/models/notification.py:9
+msgid "Info"
+msgstr ""
+
+#: panda/models/notification.py:10
+#, fuzzy
+msgid "Warning"
+msgstr "Disponible"
+
+#: panda/models/notification.py:11
+msgid "Error"
+msgstr ""
+
+#: panda/models/notification.py:19
+msgid "The user who should receive this notification."
+msgstr ""
+
+#: panda/models/notification.py:20
+msgid "recipient"
+msgstr ""
+
+#: panda/models/notification.py:21 panda/models/task_status.py:29
+msgid "message"
+msgstr ""
+
+#: panda/models/notification.py:22
+msgid "The message to deliver."
+msgstr ""
+
+#: panda/models/notification.py:23
+msgid "type"
+msgstr ""
+
+#: panda/models/notification.py:24
+msgid "The type of message: info, warning or error"
+msgstr ""
+
+#: panda/models/notification.py:25
+msgid "sent_at"
+msgstr ""
+
+#: panda/models/notification.py:26
+msgid "When this notification was created"
+msgstr ""
+
+#: panda/models/notification.py:27
+msgid "read_at"
+msgstr ""
+
+#: panda/models/notification.py:28
+msgid "When this notification was read by the user."
+msgstr ""
+
+#: panda/models/notification.py:29
+msgid "url"
+msgstr ""
+
+#: panda/models/notification.py:30
+msgid "A url to link to when displaying this notification."
+msgstr ""
+
+#: panda/models/notification.py:35
+#, fuzzy
+msgid "Notification"
+msgstr "Notificaciones"
+
+#: panda/models/related_upload.py:24
+#, fuzzy
+msgid "RelatedUpload"
+msgstr "Subir"
+
+#: panda/models/related_upload.py:25
+#, fuzzy
+msgid "RelatedUploads"
+msgstr "Subir"
+
+#: panda/models/search_log.py:14
+msgid "The user who executed the search."
+msgstr ""
+
+#: panda/models/search_log.py:17
+msgid "The data set searched, or null if all were searched."
+msgstr ""
+
+#: panda/models/search_log.py:19 panda/models/search_subscription.py:23
+msgid "query"
+msgstr ""
+
+#: panda/models/search_log.py:20
+msgid "The search query that was executed"
+msgstr ""
+
+#: panda/models/search_log.py:22
+msgid "The date and time this search was logged."
+msgstr ""
+
+#: panda/models/search_log.py:26
+#, fuzzy
+msgid "SearchLog"
+msgstr "Buscar"
+
+#: panda/models/search_log.py:27
+#, fuzzy
+msgid "SearchLogs"
+msgstr "Buscar"
+
+#: panda/models/search_log.py:31
+#, python-format
+msgid "%(user)s searched %(dataset)s for %(query)s"
+msgstr ""
+
+#: panda/models/search_log.py:34
+#, python-format
+msgid "%(user)s searched for %(query)s"
+msgstr ""
+
+#: panda/models/search_subscription.py:15
+msgid "The user who subscribed to the search."
+msgstr ""
+
+#: panda/models/search_subscription.py:18
+msgid "The dataset to be searched or null if all are to be searched."
+msgstr ""
+
+#: panda/models/search_subscription.py:21
+msgid "A category to be searched or null if all are to be searched."
+msgstr ""
+
+#: panda/models/search_subscription.py:22
+msgid "category"
+msgstr ""
+
+#: panda/models/search_subscription.py:24
+msgid "The search query to executed."
+msgstr ""
+
+#: panda/models/search_subscription.py:25
+msgid "query_url"
+msgstr ""
+
+#: panda/models/search_subscription.py:26
+msgid "Query encoded for URL."
+msgstr ""
+
+#: panda/models/search_subscription.py:27
+msgid "query_human"
+msgstr ""
+
+#: panda/models/search_subscription.py:28
+msgid "Human-readable description of the query being run."
+msgstr ""
+
+#: panda/models/search_subscription.py:29
+msgid "last_run"
+msgstr ""
+
+#: panda/models/search_subscription.py:30
+msgid "The last time this search this was run."
+msgstr ""
+
+#: panda/models/search_subscription.py:34
+msgid "SearchSubscription"
+msgstr ""
+
+#: panda/models/search_subscription.py:35
+msgid "SearchSubscriptions"
+msgstr ""
+
+#: panda/models/search_subscription.py:39
+#, fuzzy, python-format
+msgid "%(user)s is searching for %(query)s in %(dataset)s"
+msgstr "Nuevos resultados para la búsqueda \"%(query)s\" en %(dataset_name)s"
+
+#: panda/models/search_subscription.py:42
+#, fuzzy, python-format
+msgid "%(user)s is searching for %(query)s in all datasets"
+msgstr "Exportación abortada: \"%(query)s\" en todos los grupos de datos"
+
+#: panda/models/slugged_model.py:16
+msgid "slug"
+msgstr ""
+
+#: panda/models/task_status.py:23
+msgid "task_name"
+msgstr ""
+
+#: panda/models/task_status.py:24
+msgid "Identifying name for this task."
+msgstr ""
+
+#: panda/models/task_status.py:25
+#, fuzzy
+msgid "task_description"
+msgstr "Descripciones que faltan"
+
+#: panda/models/task_status.py:26
+msgid "Description of the task."
+msgstr ""
+
+#: panda/models/task_status.py:27
+msgid "status"
+msgstr ""
+
+#: panda/models/task_status.py:28
+msgid "Current state of this task."
+msgstr ""
+
+#: panda/models/task_status.py:30
+msgid "A human-readable message indicating the progress of this task."
+msgstr ""
+
+#: panda/models/task_status.py:31
+msgid "start"
+msgstr ""
+
+#: panda/models/task_status.py:32
+msgid "Date and time that this task began processing."
+msgstr ""
+
+#: panda/models/task_status.py:33
+msgid "end"
+msgstr ""
+
+#: panda/models/task_status.py:34
+msgid ""
+"Date and time that this task ceased processing (either complete or failed)."
+msgstr ""
+
+#: panda/models/task_status.py:35
+#, fuzzy
+msgid "traceback"
+msgstr "Trazas:"
+
+#: panda/models/task_status.py:36
+msgid "Traceback that exited this task, if it failed."
+msgstr ""
+
+#: panda/models/task_status.py:38
+msgid "The user who initiated this task."
+msgstr ""
+
+#: panda/models/task_status.py:43
+msgid "Task"
+msgstr ""
+
+#: panda/models/task_status.py:44
+msgid "Tasks"
+msgstr ""
+
+#: panda/models/user_profile.py:22
+msgid "activation_key"
+msgstr ""
+
+#: panda/models/user_profile.py:23
+msgid "activation_key_expiration"
+msgstr ""
+
+#: panda/models/user_profile.py:26
+msgid "show_login_help"
+msgstr ""
+
+#: panda/models/user_profile.py:30
+msgid "UserProfile"
+msgstr ""
+
+#: panda/models/user_profile.py:31
+msgid "UserProfiles"
+msgstr ""
+
+#: panda/models/user_profile.py:39
+msgid "Welcome to PANDA, please activate your account!"
+msgstr ""
+
+#: panda/models/user_profile.py:40
+#, python-format
+msgid ""
+"Hello there, the administrator of your organization's PANDA has signed you "
+"up for an account.\n"
+"\n"
+"To activate your account, click this link:\n"
+"\n"
+"http://%(site_domain)s/#activate/%(activation_key)s"
+msgstr ""
+
+#: panda/models/user_proxy.py:25
+msgid "User"
+msgstr ""
+
+#: panda/models/user_proxy.py:26
+msgid "Users"
+msgstr ""
+
+#: panda/tasks/export_csv.py:43
+msgid "Preparing to export"
+msgstr "Preparando para exportar"
+
+#: panda/tasks/export_csv.py:94 panda/tasks/export_search.py:123
+#: panda/tasks/import_xls.py:82 panda/tasks/import_xlsx.py:89
+#: panda/tasks/reindex.py:81
+#, python-format
+msgid "%.0f%% complete"
+msgstr "%.0f%% completado"
+
+#: panda/tasks/export_csv.py:97 panda/tasks/export_search.py:126
+#, python-format
+msgid "Aborted after exporting %.0f%%"
+msgstr "Abortado después de exportar %.0f%%"
+
+#: panda/tasks/export_csv.py:109 panda/tasks/export_search.py:147
+#: panda/tasks/import_xls.py:99 panda/tasks/import_xlsx.py:106
+#: panda/tasks/reindex.py:100
+#, python-format
+msgid "100% complete"
+msgstr "100% completado"
+
+#: panda/tasks/export_file.py:69 panda/tasks/export_search.py:181
+msgid "Export failed"
+msgstr "Exportación fallida"
+
+#: panda/tasks/export_file.py:81 panda/tasks/export_search.py:193
+msgid "Export complete"
+msgstr "Exportación completada"
+
+#: panda/tasks/import_csv.py:53 panda/tasks/import_xls.py:43
+#: panda/tasks/import_xlsx.py:44
+msgid "Preparing to import"
+msgstr "Preparando para importar"
+
+#: panda/tasks/import_csv.py:85
+#, python-format
+msgid ""
+"This CSV file contains characters that are not %(encoding)s encoded in or "
+"after row %(row)i. You need to re-upload this file and input the correct "
+"encoding in order to import data from this file."
+msgstr ""
+"Este fichero CSV contiene caracteres que no están codificados en %(encoding)"
+"s en la fila %(row)i o después de ésta. Debes volver a subir el fichero y "
+"seleccionar la codificación correcta para poder importar los datos de éste "
+"fichero."
+
+#: panda/tasks/import_csv.py:102
+#, python-format
+msgid "%.0f%% complete (estimated)"
+msgstr "%.0f%% completado (estimado)"
+
+#: panda/tasks/import_csv.py:105
+#, python-format
+msgid "Aborted after importing %.0f%% (estimated)"
+msgstr "Abortado después de importar %.0f%% (estimado)"
+
+#: panda/tasks/import_file.py:72
+msgid "Import failed"
+msgstr "Importación fallida"
+
+#: panda/tasks/import_file.py:84
+msgid "Import complete"
+msgstr "Importación completada"
+
+#: panda/tasks/import_xls.py:85 panda/tasks/import_xlsx.py:92
+#, python-format
+msgid "Aborted after importing %.0f%%"
+msgstr "Abortado después de importar %.0f%%"
+
+#: panda/tasks/reindex.py:44
+msgid "Preparing to reindex"
+msgstr "Preparando reindexación"
+
+#: panda/tasks/reindex.py:47
+msgid "Aborted during preparation"
+msgstr "Abortado durante la preparación"
+
+#: panda/tasks/reindex.py:84
+#, python-format
+msgid "Aborted after reindexing %.0f%%"
+msgstr "Abortado después de reindexar %.0f%%"
+
+#: panda/tasks/reindex.py:159
+msgid "Reindex failed"
+msgstr "Reindexación fallida"
+
+#: panda/tasks/reindex.py:169
+#, fuzzy
+msgid "Reindex complete"
+msgstr "Reindexación fallida"
+
+#: panda/templates/admin/panda/taskstatus/change_form.html:19
+#: panda/templates/admin/panda/userproxy/add_form.html:19
+#: panda/templates/admin/panda/userproxy/add_many_form.html:19
+#: templates/livesettings/site_settings.html:50
+msgid "Home"
+msgstr "Inicio"
+
+#: panda/templates/admin/panda/taskstatus/change_form.html:22
+#: panda/templates/admin/panda/userproxy/add_form.html:22
+#: templates/admin/panda_index.html:21
+msgid "Add"
+msgstr "Añadir"
+
+#: panda/templates/admin/panda/taskstatus/change_form.html:31
+#: panda/templates/admin/panda/userproxy/add_form.html:31
+#: panda/templates/admin/panda/userproxy/add_many_form.html:31
+msgid "History"
+msgstr "Historial"
+
+#: panda/templates/admin/panda/taskstatus/change_form.html:32
+#: panda/templates/admin/panda/userproxy/add_form.html:32
+#: panda/templates/admin/panda/userproxy/add_many_form.html:32
+msgid "View on site"
+msgstr "Ver en el sitio"
+
+#: panda/templates/admin/panda/taskstatus/change_form.html:34
+msgid "Abort"
+msgstr "Abortar"
+
+#: panda/templates/admin/panda/taskstatus/change_form.html:43
+#: panda/templates/admin/panda/userproxy/add_form.html:44
+#: templates/livesettings/site_settings.html:68
+#, fuzzy
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Por favor corrige el error siguiente"
+msgstr[1] "Por favor corrige el error siguiente"
+
+#: panda/templates/admin/panda/userproxy/add_form.html:37
+msgid ""
+"Enter an email address. You may also specify the user's first and last name "
+"or leave that for them to do."
+msgstr ""
+"Introduce una dirección de correo. También puedes especificar el nombre y "
+"apellidos del usuario o dejar que él lo haga. "
+
+#: panda/templates/admin/panda/userproxy/add_form.html:38
+msgid "The new user will be emailed a link to activate their account."
+msgstr "Se le enviará al usuario un enlace para activar su cuenta."
+
+#: panda/templates/admin/panda/userproxy/add_form.html:38
+msgid "<strong>Note:</strong> Email is not <a href=\\"
+msgstr "<strong>Nota:</strong> El correo no es <a href=\\"
+
+#: panda/templates/admin/panda/userproxy/add_many_form.html:22
+msgid "Add Many"
+msgstr "Añadir varios"
+
+#: panda/templates/admin/panda/userproxy/add_many_form.html:39
+msgid ""
+"Type or paste user data into the field below in <strong>CSV format</strong>. "
+"The first_name and last_name fields may be blank left blank for any or all "
+"rows."
+msgstr ""
+"Escribe o pega los datos de usuario en el campo siguiente en <strong>formato "
+"CSV</strong>. Los campos first_name y last_name pueden ser dejados en blanco "
+"en cualquier de las filas o en todas ellas."
+
+#: panda/templates/admin/panda/userproxy/add_many_form.html:40
+msgid ""
+"If the password field is not blank the user will be activated immediately, "
+"otherwise the user will be sent an activation email."
+msgstr ""
+"Si el campo de contraseña no está vacío el usuario será activado "
+"inmediatamente, de lo contrario se le enviará un correo de activación."
+
+#: panda/templates/admin/panda/userproxy/add_many_form.html:40
+msgid "<strong>Important:</strong> Email is not <a href=\\"
+msgstr "<strong>Importante:</strong> El correo no es <a href=\\"
+
+#: panda/templates/admin/panda/userproxy/change_form.html:9
+msgid "Resend activation email"
+msgstr "Reenviar correo de activación"
+
+#: panda/templates/admin/panda/userproxy/change_list.html:12
+#, python-format
+msgid "Add %(name)s"
+msgstr "Añadir %(name)s"
+
+#: panda/templates/admin/panda/userproxy/change_list.html:15
+msgid "Add Many Users"
+msgstr "Añadir varios usuarios"
+
+#: panda/templates/notifications/disk_space_alert/email_body.txt:1
+#, python-format
+msgid ""
+"The drive containing your PANDA application is CRITICALLY low on disk space: "
+"%(bytes)s remains (%(percent)s%% full)"
+msgstr ""
+"El disco que contiene tu aplicación PANDA está casi sin espacio disponible, "
+"quedan: %(bytes)s (%(percent)s%% full)"
+
+#: panda/templates/notifications/disk_space_alert/email_body.txt:1
+#, python-format
+msgid ""
+"The drive containing your PANDA application is low on disk space: %(bytes)s "
+"remains (%(percent)s%% full)"
+msgstr ""
+"El disco que contiene tu aplicación PANDA tiene poco espacio disponible: %"
+"(bytes)s disponibles (%(percent)s%% completo)"
+
+#: panda/templates/notifications/disk_space_alert/email_body.txt:3
+#, python-format
+msgid ""
+"The drive containing your PANDA uploads is CRITICALLY low on disk space: %"
+"(bytes)s remains (%(percent)s%% full)"
+msgstr ""
+"El disco que contiene tus ficheros subidos de PANDA está casi sin espacio "
+"disponible: %(bytes)s disponible (%(percent)s%% completo)"
+
+#: panda/templates/notifications/disk_space_alert/email_body.txt:3
+#, python-format
+msgid ""
+"The drive containing your PANDA uploads is low on disk space: %(bytes)s "
+"remains (%(percent)s%% full)"
+msgstr ""
+"El disco que contiene tus ficheros subidos de PANDA tiene poco espacio "
+"disponible: %(bytes)s disponible (%(percent)s%% completo)"
+
+#: panda/templates/notifications/disk_space_alert/email_body.txt:5
+#, python-format
+msgid ""
+"The drive containing your PANDA search indices is CRITICALLY low on disk "
+"space: %(bytes)s remains (%(percent)s%% full)"
+msgstr ""
+"El disco que tus índices de búsqueda de PANDA está casi sin espacio: %(bytes)"
+"s disponible (%(percent)s%% completo)"
+
+#: panda/templates/notifications/disk_space_alert/email_body.txt:5
+#, python-format
+msgid ""
+"The drive containing your PANDA search indices is low on disk space: %(bytes)"
+"s remains (%(percent)s%% full)"
+msgstr ""
+"El disco que contiene los índices de búsquedas de PANDA tiene poco espacio "
+"disponible: %(bytes)s disponible (%(percent)s%% completo)"
+
+#: panda/templates/notifications/disk_space_alert/email_body.txt:7
+msgid "Your can always check your current disk usage on your PANDA Dashboard:"
+msgstr ""
+"Puedes comprobar en cualquier momento el espacio de disco que estes usando "
+"en tu panel de control de PANDA"
+
+#: panda/templates/notifications/disk_space_alert/email_subject.txt:1
+msgid "Low disk space!"
+msgstr "¡Poco espacio en disco!"
+
+#: panda/templates/notifications/export_aborted/email_body.txt:2
+#: panda/templates/notifications/export_aborted/email_subject.txt:2
+#, python-format
+msgid "Export aborted: \"%(query)s\" in %(dataset_name)s"
+msgstr "Exportación abortada: \"%(query)s\" en %(dataset_name)s"
+
+#: panda/templates/notifications/export_aborted/email_body.txt:2
+#: panda/templates/notifications/export_aborted/email_subject.txt:2
+#, python-format
+msgid "Export aborted: %(dataset_name)s"
+msgstr "Exportación abortada: %(dataset_name)s"
+
+#: panda/templates/notifications/export_aborted/message.html:2
+#, python-format
+msgid "Export aborted: \"%(query)s\" in <strong>%(dataset_name)s</strong>"
+msgstr ""
+"Exportación interrumpida: \"%(query)s\" in <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/export_aborted/message.html:2
+#, python-format
+msgid "Export aborted: <strong>%(dataset_name)s</strong>"
+msgstr "Exportación interrumpida: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/export_complete/email_body.txt:2
+#, python-format
+msgid "Export complete: \"%(query)s\" in %(dataset_name)s (%(row_count)s rows)"
+msgstr ""
+"Exportación completa: \"%(query)s\" en %(dataset_name)s (%(row_count)s filas)"
+
+#: panda/templates/notifications/export_complete/email_body.txt:2
+#, python-format
+msgid "Export complete: %(dataset_name)s (%(row_count)s rows)"
+msgstr "Exportación completa: %(dataset_name)s (%(row_count)s filas)"
+
+#: panda/templates/notifications/export_complete/email_body.txt:4
+#: panda/templates/notifications/export_search_complete/email_body.txt:4
+msgid "Download your results:"
+msgstr "Descargar tus resultados:"
+
+#: panda/templates/notifications/export_complete/email_subject.txt:2
+#, python-format
+msgid "Export complete: \"%(query)s\" in %(dataset_name)s"
+msgstr "Exportación completa: \"%(query)s\" en %(dataset_name)s"
+
+#: panda/templates/notifications/export_complete/email_subject.txt:2
+#, python-format
+msgid "Export complete: %(dataset_name)s"
+msgstr "Exportación completa: %(dataset_name)s"
+
+#: panda/templates/notifications/export_complete/message.html:2
+#, python-format
+msgid "Export complete: \"%(query)s\" in <strong>%(dataset_name)s</strong>"
+msgstr ""
+"Exportación completa: \"%(query)s\" en <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/export_complete/message.html:2
+#, python-format
+msgid "Export complete: <strong>%(dataset_name)s</strong>"
+msgstr "Exportación completa: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/export_failed/email_body.txt:2
+#: panda/templates/notifications/export_failed/email_subject.txt:2
+#, python-format
+msgid "Export failed: \"%(query)s\" in %(dataset_name)s"
+msgstr "Exportación fallida: \"%(query)s\" en %(dataset_name)s"
+
+#: panda/templates/notifications/export_failed/email_body.txt:2
+#: panda/templates/notifications/export_failed/email_subject.txt:2
+#, python-format
+msgid "Export failed: %(dataset_name)s"
+msgstr "Exportación fallida: %(dataset_name)s"
+
+#: panda/templates/notifications/export_failed/email_body.txt:8
+#: panda/templates/notifications/export_search_failed/email_body.txt:6
+#: panda/templates/notifications/import_failed/email_body.txt:8
+msgid "Traceback:"
+msgstr "Trazas:"
+
+#: panda/templates/notifications/export_failed/message.html:2
+#, python-format
+msgid "Export failed: \"%(query)s\" in <strong>%(dataset_name)s</strong>"
+msgstr ""
+"Exportación fallida: \"%(query)s\" en <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/export_failed/message.html:2
+#, python-format
+msgid "Export failed: <strong>%(dataset_name)s</strong>"
+msgstr "Exportación fallida: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/export_search_aborted/message.html:2
+#, python-format
+msgid "Export aborted: \"%(query)s\" in all datasets"
+msgstr "Exportación abortada: \"%(query)s\" en todos los grupos de datos"
+
+#: panda/templates/notifications/export_search_complete/email_body.txt:2
+#: panda/templates/notifications/export_search_complete/email_subject.txt:2
+#: panda/templates/notifications/export_search_complete/message.html:2
+#, python-format
+msgid "Export complete: \"%(query)s\" in all datasets"
+msgstr "Exportación completada: \"%(query)s\" en todos los grupos de datos"
+
+#: panda/templates/notifications/export_search_failed/email_body.txt:2
+#: panda/templates/notifications/export_search_failed/message.html:2
+#, python-format
+msgid "Export failed: \"%(query)s\" in all datasets"
+msgstr "Exportación fallida: \"%(query)s\" en todos los grupos de datos"
+
+#: panda/templates/notifications/import_aborted/email_body.txt:2
+#: panda/templates/notifications/import_aborted/email_subject.txt:2
+#, python-format
+msgid "Imported aborted: %(dataset_name)s"
+msgstr "Importanción abortada: %(dataset_name)s"
+
+#: panda/templates/notifications/import_aborted/message.html:2
+#, python-format
+msgid "Imported aborted: <strong>%(dataset_name)s</strong>"
+msgstr "Importación abortada: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/import_complete/email_body.txt:2
+#, python-format
+msgid "Import complete: %(dataset_name)s (%(row_count)s rows)"
+msgstr "Importación completada: %(dataset_name)s (%(row_count)s rows)"
+
+#: panda/templates/notifications/import_complete/email_subject.txt:2
+#, python-format
+msgid "Import complete: %(dataset_name)s"
+msgstr "Importación completada: %(dataset_name)s"
+
+#: panda/templates/notifications/import_complete/message.html:2
+#, python-format
+msgid "Import complete: <strong>%(dataset_name)s</strong>"
+msgstr "Importanción completada: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/import_failed/email_body.txt:2
+#: panda/templates/notifications/import_failed/email_subject.txt:2
+#, python-format
+msgid "Imported failed: %(dataset_name)s"
+msgstr "Importación fallida: %(dataset_name)s"
+
+#: panda/templates/notifications/import_failed/message.html:2
+#, python-format
+msgid "Imported failed: <strong>%(dataset_name)s</strong>"
+msgstr "Importación fallida: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/reindex_aborted/email_body.txt:2
+#: panda/templates/notifications/reindex_aborted/email_subject.txt:2
+#, python-format
+msgid "Reindex aborted: %(dataset_name)s"
+msgstr "Reindexado interrumpido: %(dataset_name)s"
+
+#: panda/templates/notifications/reindex_aborted/message.html:2
+#, python-format
+msgid "Reindex aborted: <strong>%(dataset_name)s</strong>"
+msgstr "Reindexado interrumpido: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/reindex_complete/email_body.txt:2
+#, python-format
+msgid "Reindex complete: %(dataset_name)s (%(row_count)s rows)"
+msgstr "Reindexado completo: %(dataset_name)s (%(row_count)s filas)"
+
+#: panda/templates/notifications/reindex_complete/email_subject.txt:2
+#, python-format
+msgid "Reindex complete: %(dataset_name)s"
+msgstr "Reindexado completo: %(dataset_name)s"
+
+#: panda/templates/notifications/reindex_complete/message.html:2
+#, python-format
+msgid "Reindex complete: <strong>%(dataset_name)s</strong>"
+msgstr "Reindexado completo: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/reindex_failed/email_body.txt:2
+#: panda/templates/notifications/reindex_failed/email_subject.txt:2
+#, python-format
+msgid "Reindex failed: %(dataset_name)s"
+msgstr "Reindexado fallido: %(dataset_name)s"
+
+#: panda/templates/notifications/reindex_failed/message.html:2
+#, python-format
+msgid "Reindex failed: <strong>%(dataset_name)s</strong>"
+msgstr "Reindexado fallido: <strong>%(dataset_name)s</strong>"
+
+#: panda/templates/notifications/subscription_results/email_body.txt:2
+#, python-format
+msgid ""
+"New search results for \"%(query)s\" in %(dataset_name)s (%(count)s new)"
+msgstr ""
+"Nuevos resultados de la búsqueda \"%(query)s\" en %(dataset_name)s (%(count)"
+"s nuevos)"
+
+#: panda/templates/notifications/subscription_results/email_body.txt:4
+msgid "See just the new results:"
+msgstr "Mostrar sólo los resultados nuevos:"
+
+#: panda/templates/notifications/subscription_results/email_body.txt:7
+msgid "See all results for your search:"
+msgstr "Mostrar todos los resultados de tu búsqueda:"
+
+#: panda/templates/notifications/subscription_results/email_body.txt:10
+msgid "To stop receiving notifications for this search, visit your user page:"
+msgstr ""
+"Para dejar de recibir notificaciones sobre ésta búsqueda, visita tu página "
+"de usuario:"
+
+#: panda/templates/notifications/subscription_results/email_subject.txt:2
+#, python-format
+msgid "New search results for \"%(query)s\" in %(dataset_name)s"
+msgstr "Nuevos resultados para la búsqueda \"%(query)s\" en %(dataset_name)s"
+
+#: panda/templates/notifications/subscription_results/message.html:2
+#, python-format
+msgid ""
+"New search results for \"%(query)s\" in <strong>%(dataset_name)s</strong>"
+msgstr ""
+"Nuevos resultados para \"%(query)s\" en <strong>%(dataset_name)s</strong>"
+
+#: panda/utils/csvdata.py:20
+#, python-format
+msgid ""
+"This CSV file contains characters that are not %s encoded. You need to input "
+"the correct encoding in order to import data from this file. Read our "
+"documentation about <a href=\"http://pandaproject.net/docs/determining-the-"
+"encoding-of-a-csv-file.html\">determining the encoding of a CSV file</a>."
+msgstr ""
+
+#: panda/utils/csvdata.py:23
+msgid "CSV dialect could not be automatically inferred."
+msgstr ""
+
+#: panda/utils/csvdata.py:41 panda/utils/csvdata.py:56
+#, fuzzy, python-format
+msgid ""
+"This CSV file contains characters that are not %s encoded. You need to input "
+"the correct encoding in order to import data from this file."
+msgstr ""
+"Este fichero CSV contiene caracteres que no están codificados en %(encoding)"
+"s en la fila %(row)i o después de ésta. Debes volver a subir el fichero y "
+"seleccionar la codificación correcta para poder importar los datos de éste "
+"fichero."
+
+#: panda/utils/typecoercion.py:81
+#, python-format
+msgid "%(name)s: all values succesfully converted to type \"%(type)s\"\n"
+msgstr ""
+
+#: panda/utils/typecoercion.py:84
+#, python-format
+msgid ""
+"%(name)s: failed to convert %(error_count)i values to type \"%(type)s\"\n"
+msgstr ""
+
+#: panda/utils/xls.py:151
+#, python-format
+msgid "Unknown column type found in xls file: %s"
+msgstr ""
+
+#: templates/404.html:5
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: templates/500.html:5
+msgid "Server Error"
+msgstr "Error de servidor"
+
+#: templates/admin/base_site.html:4
+msgid "PANDA Administration"
+msgstr "Administración de PANDA"
+
+#: templates/admin/panda_index.html:6
+msgid "Configure domain, email, etc."
+msgstr ""
+
+#: templates/admin/panda_index.html:10
+#, python-format
+msgid "Models available in the %(name)s application."
+msgstr "Modelos disponibles en la aplicación %(name)s."
+
+#: templates/admin/panda_index.html:11
+#, python-format
+msgid "%(name)s"
+msgstr "%(name)s"
+
+#: templates/admin/panda_index.html:27
+msgid "Change"
+msgstr "Cambiar"
+
+#: templates/admin/panda_index.html:37
+msgid "You don't have permission to edit anything."
+msgstr "No tienes permiso para editar nada"
+
+#: templates/livesettings/site_settings.html:47
+msgid "Documentation"
+msgstr "Documentación"
+
+#: templates/livesettings/site_settings.html:47
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: templates/livesettings/site_settings.html:47
+msgid "Log out"
+msgstr "Salir"
+
+#: templates/livesettings/site_settings.html:51
+msgid "Edit Site Settings"
+msgstr "Editar configuración"
+
+#: templates/livesettings/site_settings.html:54
+#, fuzzy
+msgid "Site settings"
+msgstr "Editar configuración"
+
+#: templates/livesettings/site_settings.html:61
+msgid "Livesettings are disabled for this site."
+msgstr "Los ajustes en vivo están desabilitados en éste sitio"
+
+#: templates/livesettings/site_settings.html:62
+msgid "All configuration options must be edited in the site settings.py file"
+msgstr ""
+"Todas las opciones de configuración deben ser editadas en el fichero "
+"settings.py del sitio"
+
+#: templates/livesettings/site_settings.html:84
+#, python-format
+msgid "Group settings: %(name)s"
+msgstr "Ajustes de grupo: %(name)s"
+
+#: templates/livesettings/site_settings.html:111
+msgid "Update Settings"
+msgstr "Actualizar configuración"
+
+#: templates/livesettings/site_settings.html:117
+msgid "You don't have permission to edit values."
+msgstr "No tienes permiso para editar valores"
+
+#~ msgid "Welcome to PANDA"
+#~ msgstr "Bienvenida a PANDA"
+
+#~ msgid "Spanish"
+#~ msgstr "Español"
+
+#, fuzzy
+#~ msgid "(version 1.0.3)"
+#~ msgstr "(versión 1.0.2)"

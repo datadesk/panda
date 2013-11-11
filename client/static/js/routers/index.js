@@ -27,20 +27,22 @@ PANDA.routers.Index = Backbone.Router.extend({
         "notifications/:limit/:page":                       "notifications",
         "user/:id":                                         "user",
         "dashboard":                                        "dashboard",
-        "welcome":                                          "welcome",
         "export/:id":                                       "fetch_export",
         "*path":                                            "not_found"
     },
 
-    _fffix: function(param) {
+    _percent_twenty_fix: function(param) {
         /*
-         * The latest FF encodes urls in a non-standard way, as documented
-         * in these Backbone tickets:
-         * https://github.com/documentcloud/backbone/pull/1156
-         * https://github.com/documentcloud/backbone/pull/1219
-         */
-        return param;
-        if ($.browser.mozilla) {
+        * The latest FF encodes urls in a non-standard way, as documented
+        * in these Backbone tickets:
+        * https://github.com/documentcloud/backbone/pull/1156
+        * https://github.com/documentcloud/backbone/pull/1219
+        *
+        * As of 2013.02.21 it is also effecting Chrome
+        * changes made to work across browsers
+        * also fixes a related rendering error in the newest firefox
+        */
+        if (param) {
             return param.replace("%20", " ");
         } else {
             return param;
@@ -68,7 +70,7 @@ PANDA.routers.Index = Backbone.Router.extend({
     },
 
     search: function(category, query, since, limit, page) {
-        this.controller.goto_search(category, this._fffix(query), since, limit, page);
+        this.controller.goto_search(category, this._percent_twenty_fix(query), since, limit, page);
     },
 
     data_upload: function(dataset_slug) {
@@ -76,7 +78,7 @@ PANDA.routers.Index = Backbone.Router.extend({
     },
 
     datasets_search: function(category, query, limit, page) {
-        this.controller.goto_datasets_search(category, this._fffix(query), limit, page);
+        this.controller.goto_datasets_search(category, this._percent_twenty_fix(query), limit, page);
     },
 
     dataset_view: function(slug) {
@@ -84,7 +86,7 @@ PANDA.routers.Index = Backbone.Router.extend({
     },
 
     dataset_search: function(slug, query, since, limit, page) {
-        this.controller.goto_dataset_search(slug, this._fffix(query), since, limit, page);
+        this.controller.goto_dataset_search(slug, this._percent_twenty_fix(query), since, limit, page);
     },
     
     notifications: function(limit, page) {
@@ -97,10 +99,6 @@ PANDA.routers.Index = Backbone.Router.extend({
 
     dashboard: function() {
         this.controller.goto_dashboard();
-    },
-
-    welcome: function() {
-        this.controller.goto_welcome();
     },
 
     fetch_export: function(id) {

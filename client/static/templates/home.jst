@@ -1,16 +1,30 @@
-<div id="recent-datasets" class="row-fluid">
-    <div class="span6">
-        <h3>Recently added datasets</h3>
-        <% _.each(recent.datasets, function(dataset) { %>
-            <h4><a href="#dataset/<%= dataset.slug %>"><%= unescape(dataset.name) %></a></h4>
-            <% if (dataset.description) { %><p><em><%= unescape(dataset.description) %></em></p><% } %>
-            <p>Created <%= moment(dataset.creation_date, "YYYY-MM-DDTHH:mm:ss").toLocalTimezone().fromNow() %></p>
-        <% }); %>
-        <% if (recent.meta.total_count > recent.datasets.length) { %>
-        <a href="#datasets/all">Browse all <%= recent.meta.total_count %> datasets &raquo;</a>
-        <% } %>
+<div id="home">
+    <div id="recent-datasets" class="row-fluid">
+        <div class="span7">
+            <div id="start">
+                <h3><%= text.welcome %></h3>
+                <p><i class="icon-arrow-up"></i> <%= text.search %></p>
+                <p><i class="icon-arrow-right"></i> <%= text.lookup_datasets %></p>
+                <p><i class="icon-file"></i> <%= text.upload %></p>
+                <h3 class="ready"><%= text.power_user %></h3>
+                <ul>
+                    <li><a href="http://pandaproject.net/docs/searching-data.html"><%= text.advanced_searches %></a></li>
+                    <li><a href="http://pandaproject.net/docs/uploading.html"><%= text.upload_data %></a></li>
+                    <li><a href="http://pandaproject.net/docs/search-subscriptions.html"><%= text.subscribe %></a></li>
+                    <li><%= text.complete_docs %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="span5">
+            <h3><%= text.recently_added_datasets %></h3>
+            <% _.each(recent.datasets, function(dataset) { %>
+                <h4><a href="#dataset/<%= dataset.slug %>"><%= unescape(dataset.name) %></a></h4>
+                <% if (dataset.description) { %><p><em><%= unescape(dataset.description) %></em></p><% } %>
+                <p><%= interpolate(text.created_timestamp, { timeago: moment(dataset.creation_date, "YYYY-MM-DDTHH:mm:ss").toLocalTimezone().fromNow() }, true) %></p>
+            <% }); %>
+            <% if (recent.meta.total_count > recent.datasets.length) { %>
+            <a href="#datasets/all"><%= interpolate(text.browse_all_datasets, { count: recent.meta.total_count}, true) %> &raquo;</a>
+            <% } %>
+        </div>
     </div>
-    <div class="span6">
-        <p>Want to see how your PANDA is being used? Visit the <a href="#dashboard">Dashboard</a>!</p>
 </div>
-

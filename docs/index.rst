@@ -4,7 +4,7 @@ PANDA: A Newsroom Data Appliance |release|
 
 .. warning::
 
-    This documentation is for the version of PANDA **currently under development**. Were you looking for `version 1.0.2 <http://panda.readthedocs.org/en/1.0.2/>`_ documentation?
+    This documentation is for the version of PANDA **currently under development**. Were you looking for `version 1.1.0 <http://panda.readthedocs.org/en/1.1.0/>`_ documentation?
 
 About
 =====
@@ -59,6 +59,7 @@ Configuration
     Email (SMTP) <email.rst>
     Performance <performance.rst>
     Secure connections (SSL) <ssl.rst>
+    Using PANDA in non-English languages <i18n.rst>
 
 Administration
 ==============

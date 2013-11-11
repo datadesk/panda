@@ -5,6 +5,8 @@ PANDA.views.Activate = Backbone.View.extend({
 
     activation_key: null,
 
+    text: PANDA.text.Activate(),
+
     initialize: function() {
         _.bindAll(this);
     },
@@ -27,16 +29,17 @@ PANDA.views.Activate = Backbone.View.extend({
                 try {
                     errors = $.parseJSON(xhr.responseText);
                 } catch(e) {
-                    errors = { "__all__": "Unknown error" }; 
+                    errors = { "__all__": gettext("Unknown error") }; 
                 }
 
-                $("#activation-form").show_errors(errors, "Activation failed!");
+                $("#activation-form").show_errors(errors, gettext("Activation failed!"));
             }, this)
         });
     },
 
     render: function(data) {
         var context = PANDA.utils.make_context(data)
+        context.text = this.text;
         this.$el.html(PANDA.templates.activate(context));
     },
 
@@ -45,22 +48,22 @@ PANDA.views.Activate = Backbone.View.extend({
         var errors = {};
 
         if (!data["email"]) {
-            errors["email"] = ["This field is required."]
+            errors["email"] = [gettext("This field is required.")]
         }
 
         if (!data["password"]) {
-            errors["password"] = ["This field is required."]
+            errors["password"] = [gettext("This field is required.")]
         }
 
         if (!data["reenter_password"]) {
-            errors["reenter_password"] = ["This field is required."]
+            errors["reenter_password"] = [gettext("This field is required.")]
         }
 
         if (data["password"] != data["reenter_password"]) {
             if ("password" in errors || "reenter_password" in errors) {
                 // Skip
             } else {
-                errors["reenter_password"] = ["Passwords do not match."]
+                errors["reenter_password"] = [gettext("Passwords do not match.")]
             }
         }
 
@@ -71,7 +74,7 @@ PANDA.views.Activate = Backbone.View.extend({
         var errors = this.validate();
 
         if (!_.isEmpty(errors)) {
-            $("#activation-form").show_errors(errors, "Activation failed!");
+            $("#activation-form").show_errors(errors, gettext("Activation failed!"));
 
             return false;
         }
@@ -84,11 +87,7 @@ PANDA.views.Activate = Backbone.View.extend({
             success: function(data, status, xhr) {
                 Redd.set_current_user(new PANDA.models.User(data));
                 
-                if (data.show_login_help) {
-                    Redd.goto_welcome();
-                } else {
-                    Redd.goto_search("all");
-                }
+                Redd.goto_search("all");
             },
             error: function(xhr, status, error) {
                 Redd.set_current_user(null);
@@ -96,10 +95,10 @@ PANDA.views.Activate = Backbone.View.extend({
                 try {
                     errors = $.parseJSON(xhr.responseText);
                 } catch(e) {
-                    errors = { "__all__": "Unknown error" }; 
+                    errors = { "__all__": gettext("Unknown error") }; 
                 }
 
-                $("#activation-form").show_errors(errors, "Activation failed!");
+                $("#activation-form").show_errors(errors, gettext("Activation failed!"));
             }
         });
 

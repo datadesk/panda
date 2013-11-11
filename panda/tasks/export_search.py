@@ -7,11 +7,12 @@ import time
 from traceback import format_tb
 from zipfile import ZipFile
 
-from celery.contrib.abortable import AbortableTask
+from panda.tasks.base import AbortableTask
 from csvkit import CSVKitWriter
 from django.conf import settings
 from django.utils import simplejson as json
 from django.utils.timezone import now 
+from django.utils.translation import ugettext
 from livesettings import config_value
 
 from panda import solr
@@ -105,9 +106,10 @@ class ExportSearchTask(AbortableTask):
             n = 0
 
             while n < datasets[dataset_slug]:
+
                 response = solr.query(
                     settings.SOLR_DATA_CORE,
-                    'dataset_slug: %s %s' % (dataset_slug, query),
+                    'dataset_slug:%s AND (%s)' % (dataset_slug, query),
                     offset=n,
                     limit=SOLR_PAGE_SIZE
                 )
@@ -119,10 +121,10 @@ class ExportSearchTask(AbortableTask):
 
                     writer.writerow(data)
 
-                task_status.update('%.0f%% complete' % floor(float(total_n) / float(total_count) * 100))
+                task_status.update(ugettext('%.0f%% complete') % floor(float(total_n) / float(total_count) * 100))
 
                 if self.is_aborted():
-                    task_status.abort('Aborted after exporting %.0f%%' % floor(float(total_n) / float(total_count) * 100))
+                    task_status.abort(ugettext('Aborted after exporting %.0f%%') % floor(float(total_n) / float(total_count) * 100))
 
                     log.warning('Export aborted, query: %s' % query)
 
@@ -143,7 +145,7 @@ class ExportSearchTask(AbortableTask):
         zipfile.close()
         os.rmdir(path)
 
-        task_status.update('100% complete')
+        task_status.update(ugettext('100% complete'))
 
         log.info('Finished export, query: %s' % query)
 
@@ -177,7 +179,7 @@ class ExportSearchTask(AbortableTask):
                 tb = einfo.traceback
 
             task_status.exception(
-                'Export failed',
+                ugettext('Export failed'),
                 u'%s\n\nTraceback:\n%s' % (unicode(retval), tb)
             )
             
@@ -189,7 +191,7 @@ class ExportSearchTask(AbortableTask):
             template_prefix = 'export_search_aborted'
             notification_type = 'Info'
         else:
-            task_status.complete('Export complete')
+            task_status.complete(ugettext('Export complete'))
 
             export = Export.objects.create(
                 filename=retval,
