@@ -1,7 +1,20 @@
+1.1.2
+-----
+
+
+
 1.1.1
 -----
 
 * Fix subscription results not displaying. (#915)
+* Update documentated server cost estimate. (#911)
+* Fix broken subject line in new user email. (#913)
+* Fix errant "%20"s in search box in Firefox. (#916)
+* Fix bug in volume and solr index migration scripts. (#922)
+* Revise and document manual upload/import process for large files (#929)
+* Enable German, Italian and Spanish translations (#923, #924, #926)
+* Fix admin login form enforcing 30 char username limit. (#931)
+* Add de, es and it translators to AUTHORS file.
 
 1.1.0
 -----

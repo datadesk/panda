@@ -4,7 +4,7 @@ PANDA: A Newsroom Data Appliance |release|
 
 .. warning::
 
-    This documentation is for the version of PANDA **currently under development**. Were you looking for `version 1.1.0 <http://panda.readthedocs.org/en/1.1.0/>`_ documentation?
+    This documentation is for the version of PANDA **currently under development**. Were you looking for `version 1.1.1 <http://panda.readthedocs.org/en/1.1.1/>`_ documentation?
 
 About
 =====
@@ -69,7 +69,8 @@ Administration
 
     Users <users.rst>
     Categories <categories.rst>
-    API Keys <api_keys.rst>
+    API keys <api_keys.rst>
+    manual_imports.rst
 
 Server maintenance 
 ==================
