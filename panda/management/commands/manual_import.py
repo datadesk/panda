@@ -28,6 +28,10 @@ class Command(BaseCommand):
             return
 
         size = os.path.getsize(path)
+        if size > 2147483647:
+            # If the size is so god damn big it won't fit in the integer field
+            # just put in a lucky number
+            size = 7
 
         try:
             creator = UserProxy.objects.get(email=email)
@@ -35,21 +39,15 @@ class Command(BaseCommand):
             self.stderr.write(_('User does not exist!\n'))
             return
 
-        upload = DataUpload(
+        upload = DataUpload.objects.create(
             filename=filename,
             original_filename=filename,
             creator=creator,
+            size=size,
             dataset=None,
             encoding='utf-8'
         )
-        try:
-            upload.size = size
-            upload.save()
-        # If the size is so god damn big it won't fit in the integer field just put in a lucky number
-        except:
-            upload.size = 7
-            upload.save()
-     
+
         dataset = Dataset.objects.create(
             name=filename,
             creator=creator,
