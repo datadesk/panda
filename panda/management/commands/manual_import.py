@@ -35,18 +35,26 @@ class Command(BaseCommand):
             self.stderr.write(_('User does not exist!\n'))
             return
 
-        upload = DataUpload.objects.create(
+        upload = DataUpload(
             filename=filename,
             original_filename=filename,
-            size=size,
             creator=creator,
             dataset=None,
-            encoding='utf-8')
+            encoding='utf-8'
+        )
+        try:
+            upload.size = size
+            upload.save()
+        # If the size is so god damn big it won't fit in the integer field just put in a lucky number
+        except:
+            upload.size = 7
+            upload.save()
      
         dataset = Dataset.objects.create(
             name=filename,
             creator=creator,
-            initial_upload=upload)
+            initial_upload=upload
+        )
 
         self.stdout.write('%s http://%s/#dataset/%s\n' % (_('Dataset created:'), config_value('DOMAIN', 'SITE_DOMAIN'), dataset.slug))
 
